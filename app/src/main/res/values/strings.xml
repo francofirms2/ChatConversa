@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ChatConversa</string>
+    <string name="IngreseNombre">Ingrese Nombre de Usuario</string>
+    <string name="IngreseContraseña">Ingrese Contraseña</string>
+    <string name="IniciarSesion">Iniciar Sesión</string>
+    <string name="LabelInicio">Inicio de Sesión</string>
+    <string name="LabelRegistro">Registro de Usuario</string>
+    <string name="LabelRegNombre">Ingrese su Nombre</string>
+    <string name="LabelRegApellido">Ingrese su Apellido</string>
+    <string name="LabelRegRun">Ingrese su RUN (Sin digito verificador) </string>
+    <string name="LabelRegNombreDeUsuario">Ingrese su Nombre de Usuario</string>
+    <string name="LabelRegEmail">Ingrese su Email</string>
+    <string name="LabelRegContraseña">Ingrese su Contraseña</string>
+    <string name="LabelRegToken">Ingrese Token</string>
+    <string name="LabelButtonReg">Registrar</string>
+    <string name="LabelButTCrear">Crear cuenta</string>
+    <string name="LabelLogout">Logout</string>
+    <string name="LabelVolver">Volver</string>
+    <string name="LaberPasswordRegConfirmacion">Ingrese confirmacion de su Contraseña</string>
+</resources>
