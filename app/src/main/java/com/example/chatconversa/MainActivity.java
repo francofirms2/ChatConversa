@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextInputEditText password;
     private   String device_id;
     public static String token;
+    public static String fotoperfil;
     public static String username;
     public static int user_id;
 
@@ -84,12 +85,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         if (respuesta.getStatus_code() == 200) {
                             constantes.setToken(respuesta.getToken());
                             Log.d("Retrofit:", "Inicio de sesion exitoso");
-                            //System.out.println(respuesta.getToken());
+                            System.out.println(respuesta.getToken());
+
+                            //-------------------AQUI OBTIENES DATOS PARA ENVIAR MSG---------------------------//
+
                             token = respuesta.getToken();
                             user_id = respuesta.getData().getId();
                             username = respuesta.getData().getUsername();
+                            fotoperfil = respuesta.getData().getImage();
                             //Log.d("Retrofit", "Token: " + respuesta.getToken());
-                            gotoLogout(token, user_id, username);
+                            gotoLogout(token, user_id, username,fotoperfil);
+
+
+                            ///-----------------------------------------------------------///
                         }
                     } else {
                         Gson gson = new Gson();
@@ -127,13 +135,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         finish();
     }
 
-    public void gotoLogout(String token, int user_id, String username){
+    public void gotoLogout(String token, int user_id, String username, String fotoperfil){
 
             Intent gotologout = new Intent(this, LogoutActivity.class);
             Bundle params = new Bundle();
             params.putString("token", token);
             params.putInt("user_id", user_id);
             params.putString("username", username);
+            params.putString("fotoperfil", fotoperfil);
             //System.out.println("Verificacion token: " + token);
             gotologout.putExtras(params);
             //System.out.println("Username: " + username);

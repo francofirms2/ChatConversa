@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/perfil"
+        android:title="Perfil" />
+    <item
+        android:id="@+id/equipodesarrollo"
+        android:title="Equipo de desarrollo" />
+    <item
+        android:id="@+id/deslogitem"
+        android:title="@string/LabelLogout" />
+</menu>

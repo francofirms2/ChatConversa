@@ -17,4 +17,7 @@
     <string name="LabelLogout">Logout</string>
     <string name="LabelVolver">Volver</string>
     <string name="LaberPasswordRegConfirmacion">Ingrese confirmacion de su Contraseña</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
